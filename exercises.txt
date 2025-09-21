@@ -1,0 +1,89 @@
+Självständiga övningar – Funktioner
+
+Mål:
+
+Träna function declaration, expression och arrow functions
+
+Förstå parametrar och return
+
+Instruktion: Jobba i ordning BAS → MEDEL → AVANCERAD
+
+===================================================
+BAS
+===================================================
+
+1)Hello function
+Skapa en funktion greet som tar in ett namn och loggar “Hej [namn]”.
+
+2) Addering
+Skapa en funktion add(a, b) som returnerar summan. Testa med olika värden.
+
+3) Arrow function
+Skriv om add till en arrow function.
+
+Mini-debug: Vad händer om du kör add(2)? Lägg ev. till defaultvärden:
+const add = (a = 0, b = 0) => a + b.
+
+===================================================
+MEDEL
+===================================================
+
+4) Fullständigt namn
+Skapa en funktion fullName(first, last) som returnerar “[förnamn] [efternamn]”.
+
+
+5) Åldersfunktion
+Skapa en funktion describe(name, age) som returnerar “Hej NAME, du är AGE år”.
+
+Test: Prova både giltiga och ogiltiga data värden.
+
+Extra: Ge age ett defaultvärde: age = 0.
+
+===================================================
+AVANCERAD (valfritt för den som blir klar för här kan ämnen vi inte hunnit prata om på lektionen komma behövas för att kunna lösa uppgifterna) 
+===================================================,
+
+6) Beräkningar
+Skapa en funktion calcArea(width, height) som returnerar area.
+
+Extra: Validera att båda är tal, annars returnera ett felmeddelande.
+
+7)Villkor i funktion
+Skapa en funktion isAdult(age) som returnerar true/false beroende på åldern. Testa med if-sats.
+
+8) Callback-demo (extra för nyfikna)
+Skapa en funktion doTwice(fn) som kör en funktion två gånger. Skicka in en arrow function som loggar “Hej”.
+
+9) Defaultparametrar – robusthet
+Gör en funktion safeDivide(a, b = 1) som returnerar a / b.
+
+Om b === 0, returnera t.ex. "Kan inte dividera med 0".
+
+--------------------------------------------------
+--------------------------------------------------
+
+📢 Reflektion & Q&A
+
+När är det motiverat att bryta ut kod till en funktion?
+
+--------------------------------------------------
+
+När ska man välja arrow functions istället för vanliga functions?
+
+--------------------------------------------------
+
+Varför är return viktigt – vad händer utan det?
+
+--------------------------------------------------
+
+Vilken loop väljer du i olika situationer (for / while / for...of) och varför?
+
+--------------------------------------------------
+
+Har du skrivit samma kod två gånger?
+Hur hade du kunnat bryta ut det till en funktion för att minska duplicering?
+
+--------------------------------------------------
+
+Koppling framåt:
+Var ser du funktioner i kommande delar (events, array-metoder som map/filter/reduce)?

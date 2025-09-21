@@ -1,0 +1,202 @@
+🧭 Workshop – 🚀 JavaScript Loopar + Funktioner
+
+⏰ Tid: ca 3h
+📚 Kurs: Grundläggande Frontend-programmering
+📅 Vecka 6 – Måndag 22 sep
+
+--------------------------------------------------
+--------------------------------------------------
+
+🎯 Lektionsmål
+
+Efter lektionen ska studenterna kunna:
+
+✅ Förklara vad loopar är och när man använder for, while, for...of
+✅ Förklara vad funktioner är och varför de används
+✅ Skapa funktioner med function declaration och function expression
+✅ Använda parametrar och return
+✅ Skriva arrow functions
+✅ Avgöra när det är lämpligt att använda funktioner i kod
+
+--------------------------------------------------
+--------------------------------------------------
+
+📝 Lektionsplanering (3 timmar)
+
+– Uppstart & recap
+
+– PowerPoint & Teori (Slides 58–68)
+
+– Code-Along
+
+– Självständiga övningar
+
+– Reflektion & Q&A
+
+  - Diskutera varför funktioner är viktiga
+
+  - Skillnad på arrow functions och vanliga functions
+
+  - När ska man använda return?
+
+– Sammanfattning & Preview
+
+
+--------------------------------------------------
+--------------------------------------------------
+
+📢 PowerPoint – Talarmanus (Slides 58 - 68)
+
+--------------------------------------------------
+
+🟨 Slide 58 – Loopar
+
+Innehåll:
+Vanliga typer: for, while, for...of.
+
+Talarmanus:
+”En loop är ett sätt att upprepa kod automatiskt istället för att skriva samma sak flera gånger. 
+
+Med en for-loop bestämmer vi exakt hur många gånger koden ska köras. 
+
+Talarmanus:
+”En for-loop består av tre delar: en start (initialisering), ett villkor och en uppdatering. Här börjar vi på i = 0, kör loopen så länge i < 5, och ökar i med 1 varje gång. Det gör att vi loggar talen 0 till 4.”
+
+--------------------------------------------------
+
+🟨 Slide 59 – Loopar (while-loop)
+
+Talarmanus:
+”En while-loop används när vi inte vet exakt hur många gånger något ska köras, men vi vet vilket villkor som ska gälla. Här körs loopen så länge i < 5. 
+Viktigt: glöm inte att uppdatera variabeln inuti loopen, annars riskerar man en oändlig loop.”
+
+--------------------------------------------------
+
+🟨 Slide 60 – Loopar (for...of)
+
+Talarmanus:
+”for...of är perfekt för arrayer. Den går automatiskt igenom alla värden utan att vi behöver tänka på index. Här loggas färgerna en i taget: röd, grön, blå. Enklare och tydligare än en for-loop när vi bara vill åt värdena.”
+
+--------------------------------------------------
+
+🟨 Slide 61 – Exempel
+
+Talarmanus:
+”Här blandar vi loopar och villkor. Beroende på värdet av i skriver vi ut olika saker: fisk, mittemellan eller fågel. Detta visar hur loopar ofta kombineras med if/else för mer avancerad logik. Diskutera gärna: vad tror ni skrivs ut innan vi testar koden?”
+
+--------------------------------------------------
+
+🟨 Slide 62 – Avancering med JavaScript ES6+
+
+Innehåll:
+Introduktion till funktioner och higher order functions.
+
+Talarmanus:
+”Nu går vi vidare till funktioner. Funktioner gör att vi kan gruppera kod och återanvända den. Med ES6 fick vi också nya, kortare sätt att skriva funktioner – så kallade arrow functions – och begrepp som higher order functions.”
+
+--------------------------------------------------
+
+🟨 Slide 63 – Funktioner och higher order functions
+ (grundläggande)
+
+Kodexempel:
+function add(a, b) {
+  return a + b;
+}
+let summa = add(5, 3);
+
+Talarmanus:
+”En funktion definieras en gång, men kan användas flera gånger. Här tar add två parametrar och returnerar summan. När vi anropar add(5,3) får vi tillbaka 8. Return betyder att funktionen skickar tillbaka ett värde som vi kan spara i en variabel.”
+
+--------------------------------------------------
+
+🟨 Slide 64 – Funktioner (definition)
+
+Innehåll:
+En funktion har parametrar, anropas med argument, returnerar värden.
+
+Vi kan också skapa funktioner inuti andra funktioner. Syftet är att strukturera koden och undvika upprepningar.”
+
+--------------------------------------------------
+
+🟨 Slide 65 – Funktion
+
+Talarmanus:
+”För att använda en funktion måste vi först definiera den – precis som vi gör med variabler. Namnet följer samma regler som variabler, och när vi anropar en funktion kan vi skicka in argument, alltså värden, till parametrarna.
+
+Inuti funktionsblocket, alltså måsvingarna {}, skriver vi instruktionerna som ska köras. En funktion kan returnera ett värde – till exempel en beräkning eller en sträng.
+
+Tekniskt sett är funktioner i JavaScript också objekt, vilket gör dem väldigt flexibla. De används för att undvika upprepningar, för att strukturera koden, och för att lösa mer avancerade problem. Vi kan till och med ha funktioner inuti funktioner, vilket öppnar upp för mer avancerade mönster.
+
+Det viktiga att ta med här är: funktioner gör koden både mer organiserad och mer återanvändbar.”
+
+--------------------------------------------------
+
+🟨 Slide 66 – Olika sätt att definiera funktioner
+
+Innehåll:
+Kodexempel:
+
+function declaration
+
+function expression
+
+arrow function (kort & lång syntax).
+
+Talarmanus:
+”Det finns flera sätt att definiera funktioner:
+
+En klassisk/vanlig function declaration.
+
+En function expression, där vi sparar en funktion i en variabel.
+
+Arrow functions – kortare syntax som kom i ES6. De är smidiga, särskilt för korta funktioner eller när vi skickar funktioner som argument.”
+
+--------------------------------------------------
+
+🟨 Slide 67 – Definiera funktioner
+
+Innehåll:
+Kodexempel på function expression och function declaration.
+
+Talarmanus:
+”Här ser ni samma funktion definierad på olika sätt. Båda fungerar
+
+Viktigt: function declarations hoistas – de kan anropas innan de definieras i koden – medan expressions inte gör det.”
+
+--------------------------------------------------
+
+🟨 Slide 68 – Default-parametrar
+
+Talarmanus:
+”Vi kan också ge parametrar ett standardvärde. Här har parametern a ett default = 'Remember me'. Om vi anropar funktionen utan att skicka in något, används default. Detta är ett bra sätt att skriva robusta funktioner.”
+
+--------------------------------------------------
+--------------------------------------------------
+
+💻 Code-Along
+
+📂 Mappstruktur:
+
+mondayAgenda/
+  ├── indexCA.html
+  └── scriptCA.js
+
+indexCA.html 
+Genomför den koden
+
+scriptCA.js
+Genomför den koden
+
+--------------------------------------------------
+--------------------------------------------------
+
+🧠 Självständiga övningar
+
+--------------------------------------------------
+--------------------------------------------------
+
+📢 Reflektion & Q&A
+
+--------------------------------------------------
+--------------------------------------------------
