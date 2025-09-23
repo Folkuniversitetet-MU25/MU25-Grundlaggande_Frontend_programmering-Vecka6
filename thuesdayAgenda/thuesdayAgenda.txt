@@ -24,7 +24,7 @@ Använda destrukturering av arrayer och objekt för att skriva renare kod.
 
 - Standup: Skicka stafett pinnen - Var och en berättar vad som är lätt och svårt med Vanilla JS hittils.
 
-- PowerPoint & teori (Slides 70–75)
+- PowerPoint & teori (Slides 70–76)
 
 - Code-Along (map, filter, destrukturering)
 
@@ -35,7 +35,7 @@ Använda destrukturering av arrayer och objekt för att skriva renare kod.
 --------------------------------------------------
 --------------------------------------------------
 
-📢 PowerPoint – Talarmanus (Slides 70-75)
+📢 PowerPoint – Talarmanus (Slides 70-76)
 
 --------------------------------------------------
 
