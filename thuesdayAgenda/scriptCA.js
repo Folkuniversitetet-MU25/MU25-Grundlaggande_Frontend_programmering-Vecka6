@@ -1,6 +1,14 @@
 // 🟡 Startdata
 const numbers = [1, 2, 3, 4, 5];
-const names = ["Eva", "Bo", "Anna", "Li", "Kalle"];
+const names = [
+  "Eva",
+  "Bo",
+  "Anna",
+  "Li",
+  "Kalle",
+  "Mohammad",
+  "Kung Carl-Gustav 8",
+];
 
 // 1) forEach – gör något för varje (ingen retur-array)
 console.log("forEach:");
