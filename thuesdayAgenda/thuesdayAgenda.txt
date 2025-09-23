@@ -1,0 +1,214 @@
+🧭 Workshop – 🚀 Higher Order Functions & Destrukturering
+
+⏰ Tid: ca 3h
+📚 Kurs: Grundläggande Frontend-programmering
+📅 Vecka 6 – tidag 23 september
+
+--------------------------------------------------
+--------------------------------------------------
+
+🎯 Lektionsmål
+
+Efter lektionen ska studenterna kunna:
+
+Förklara vad en higher order function är.
+
+Använda forEach, map och filter och förstå skillnaderna mellan dem.
+
+Använda destrukturering av arrayer och objekt för att skriva renare kod.
+
+--------------------------------------------------
+--------------------------------------------------
+
+📌 Kort lektionsagenda
+
+- Standup: Skicka stafett pinnen - Var och en berättar vad som är lätt och svårt med Vanilla JS hittils.
+
+- PowerPoint & teori (Slides 70–75)
+
+- Code-Along (map, filter, destrukturering)
+
+- Självständiga övningar
+
+- Reflektion & Q&A
+
+--------------------------------------------------
+--------------------------------------------------
+
+📢 PowerPoint – Talarmanus (Slides 70-75)
+
+--------------------------------------------------
+
+🟨 Slide 70 – Higher Order Functions (HOF)
+
+🗣️
+“En higher order function är en funktion som antingen tar en annan funktion som argument eller returnerar en funktion.
+I JavaScript är forEach, map, filter, reduce, find, some, every typiska exempel.
+
+De kallas ibland för ‘funktioner som jobbar med funktioner’.
+Varför är det bra? För att det gör vår kod mer deklartiv: vi beskriver vad vi vill göra, inte hur vi gör det rad för rad.
+
+Vi kommer att se att många array-metoder bygger på detta koncept.”
+
+--------------------------------------------------
+
+🟨 Slide 71 – Higher order functions för arrayer
+
+🗣️
+“Det finns flera vanliga högre ordningens funktioner för arrayer i JavaScript:
+
+forEach – gör något för varje element, returnerar inget.
+
+filter – skapar en ny lista med de element som klarar ett villkor.
+
+map – transformerar varje element till något nytt, returnerar en ny array.
+
+reduce – ‘koka ner’ listan till ett enda värde, t.ex. summan.
+
+find – hitta det första elementet som matchar ett villkor.
+
+some – true om minst ett element matchar.
+
+every – true om alla element matchar.
+
+Alla dessa kan du läsa mer om på MDN, men idag fokuserar vi på de mest använda i vardagen: forEach, filter, map och find.”
+
+--------------------------------------------------
+
+🟨 Slide 72 – forEach
+
+🗣️
+“forEach används när vi vill göra något för varje element i listan.
+Det kan vara att skriva ut till konsolen, uppdatera DOM:en eller logga data.
+
+👉 Viktigt: forEach returnerar ingenting – returvärdet ignoreras.
+Det betyder att om du vill skapa en ny lista är forEach fel metod. Då ska du istället använda map eller filter.
+
+forEach är alltså bra när vi vill utföra biverkningar (side effects), t.ex.:
+
+Skriva ut till konsolen
+
+Lägga till något i en existerande array
+
+Uppdatera en HTML-lista på sidan
+
+Men: ska vi skapa en ny lista → välj map eller filter.”
+
+--------------------------------------------------
+
+🟨 Slide 73 – find
+
+🗣️
+“find letar upp det första elementet i arrayen som uppfyller ett villkor.
+Om inget matchar returneras undefined.
+
+Exempel: Vi letar efter det första jämna talet i en lista.
+[1,2,3,4,5].find(x => x % 2 === 0) → returnerar 2.
+Men [11,13,15].find(...) → returnerar undefined.
+
+👉 När använder man find?
+
+När vi bara behöver en träff, inte en hel lista.
+
+Exempel: hitta första användaren över 18 år, första produkten som är slutsåld, etc.”
+
+--------------------------------------------------
+
+🟨 Slide 74 – filter
+
+🗣️
+“filter skapar en ny lista baserat på ett villkor.
+Varje element testas mot en funktion → de som returnerar true hamnar i den nya listan.
+
+Exempel: [1,2,3,4,5].filter(x => x < 3) → [1,2].
+
+👉 När använder man filter?
+
+När man vill plocka ut en delmängd av en array.
+
+Exempel: alla användare med admin-roll, alla produkter billigare än 100 kr.
+
+Fördel: Originalarrayen lämnas orörd → kod blir mer förutsägbar och lättare att testa.”
+
+--------------------------------------------------
+
+🟨 Slide 75 – map
+
+🗣️
+“map används för att transformera en array till en ny array.
+Varje element skickas genom en funktion, och resultatet byggs upp till en ny lista.
+
+Exempel: [1,2,3].map(x => x*2) → [2,4,6].
+Eller ['hej','hallå'].map(s => s+'!') → ['hej!','hallå!'].
+
+👉 När använder man map?
+
+När vi vill skapa en ny lista med samma längd som originalet, men med ändrade värden.
+
+Exempel: skapa en lista med namn i versaler, priser med moms tillagd, eller extrahera bara namn från en array med objekt.
+
+Vanligt misstag: försöka använda forEach för att skapa en ny array. Då får man skriva extra kod med push. map är renare och tydligare.”
+
+--------------------------------------------------
+
+🟨 Slide 76 – Destrukturering (arrayer & objekt)
+
+Innehåll:
+
+// Array
+const [a, b, c] = [1, 2, 3]; // a=1, b=2, c=3
+
+// Objekt
+const person = { name: "Anna", age: 25 };
+const { name, age } = person; // name="Anna", age=25
+
+
+🗣️
+“Destrukturering betyder att vi packar upp värden från arrayer eller objekt direkt till variabler.
+
+Fördelar:
+
+Koden blir kortare och tydligare.
+
+Vi slipper upprepa person.name och person.age.
+
+Går även att döpa om variabler:
+const { name: fullName } = person;
+
+👉 När använder man destrukturering?
+
+När man arbetar med objekt med många properties.
+
+När man vill ta ut bara vissa värden.
+
+När man tar emot argument i en funktion och vill göra koden mer läsbar.”
+
+--------------------------------------------------
+--------------------------------------------------
+
+💻 Code-Along
+
+📂 Mappstruktur:
+
+mondayAgenda/
+  ├── indexCA.html
+  └── scriptCA.js
+
+indexCA.html 
+Genomför den koden
+
+scriptCA.js
+Genomför den koden
+
+--------------------------------------------------
+--------------------------------------------------
+
+🧠 Självständiga övningar
+
+--------------------------------------------------
+--------------------------------------------------
+
+📢 Reflektion & Q&A
+
+--------------------------------------------------
+--------------------------------------------------
