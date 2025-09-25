@@ -1,8 +1,4 @@
-Självständiga övningar – HOF, destrukturering
-
-Mål:
-
-Träna forEach/map/filter, destrukturering
+Självständiga övningar
 
 Instruktion: Jobba i ordning BAS → MEDEL → AVANCERAD
 
@@ -12,66 +8,49 @@ Ha Consolen öppen.
 BAS
 ===================================================
 
-1)Delade tal (map)
-Skapa const numbers = [2, 5, 8, 10].
-Skapa const divided = ... med map. Logga resultatet.
+1)Använd spread för att kopiera en array och lägg till ett nytt element.
 
-2)Filtrera namn (filter)
-const people = ["Al", "Sara", "Omar", "Bo", "Mira", "Mohammad", "Kung Carl Gustav 8"].
-Skapa const longOnes = ... som tar bort namn kortare än 4.
+2)Använd spread för att slå ihop två arrayer.
 
-3)forEach som logg
-Med forEach, logga “Person: NAMN” för varje people.
+3)Skapa ett nytt objekt som är en kopia av {name:"Omar", age:22} men med city:"Göteborg".
 
 ===================================================
 MEDEL
 ===================================================
 
-4) Destrukturera objekt
-const product = { id: 101, title: "Penna", price: 19 }
-Plocka ut title och price och logga “Penna – 19 kr”.
+4)Skapa en funktion sum(...nums) som returnerar summan av alla argument.
 
-5) Destrukturera array
-const coords = [12, 45, 30] → plocka x, y, z via destrukturering.
+5)Skapa en funktion maxValue(...nums) som hittar det största talet.
 
-6) Kombinera filter och map: hitta alla jämna tal i [1,2,3,4,5,6] och dubbla dem.
+6)Repetera map: skapa en array med namn → returnera alla namn i versaler.
 
 ===================================================
-AVANCERAD (valfritt för den som blir klar för här kan ämnen vi inte hunnit prata om på lektionen komma behövas för att kunna lösa uppgifterna) 
+AVANCERAD
 ===================================================,
 
-7) Kedja metoder
-const vals = [1,2,3,4,5,6] → ta jämna (filter), dubbla dem (map), summera med reduce (kan ni, annars logga listan).
+7)Bygg en todo-lista i DOM där du renderar <li>-element från en array med map.
 
-8) Säker filter
-
-Skriv function safeFilter(arr = [], predicate = () => true) { return arr.filter(predicate); } 
-
-och testa:
-
-safeFilter([1,2,3], n => n>1)
-
-safeFilter() (ska inte krascha).
+8)Lägg till en input + knapp som pushar nya todos till listan och renderar om.
 
 --------------------------------------------------
 --------------------------------------------------
 
 📢 Reflektion & Q&A
 
-När använder du forEach istället för map?
+Hur gör moderna ES6+ funktioner koden mer läsbar?
 
 --------------------------------------------------
 
-Vad är fördelen med att map och filter alltid returnerar nya arrayer?
+När skulle du använda rest/spread i verkliga projekt?
 
 --------------------------------------------------
 
-Destrukturering: När gör det koden tydligare? När kan det göra den svårare att läsa?
+Vad är/menas med "shallow copy”?
 
 --------------------------------------------------
 
-Kedja metoder: När blir kedjor läsbara vs svårlästa?
+Är det alltid bra att kopiera arrayer/objekt med spread, eller finns det fallgropar (t.ex. “shallow copy”)?
 
 --------------------------------------------------
 
-Varför kallas map och filter för higher order functions?
+Varför är map/filter/spread mer populärt än for-loopar i modern JavaScript?

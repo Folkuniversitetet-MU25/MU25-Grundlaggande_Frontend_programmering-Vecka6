@@ -1,0 +1,128 @@
+🧭 Workshop – 🚀 Rest/Spread & Repetition av ES6+ funktioner
+
+⏰ Tid: ca 3h
+📚 Kurs: Grundläggande Frontend-programmering
+📅 Vecka 6 – Fredag 26 september
+
+--------------------------------------------------
+--------------------------------------------------
+
+🎯 Lektionsmål
+
+Efter lektionen ska studenterna kunna:
+
+Förklara vad rest och spread operatorn gör.
+
+Använda rest/spread för att kopiera, kombinera och bygga nya arrayer/objekt.
+
+Förstå hur rest kan samla argument i en funktion.
+
+Repetera och förstärka användningen av arrow functions, map, filter.
+
+Använda ES6+ funktioner för att skriva kortare och mer läsbar kod.
+
+--------------------------------------------------
+--------------------------------------------------
+
+📌 Agenda 
+
+– Code Review av veckans läxor
+
+- PowerPoint & teori (Slides 78–79)
+
+- Code-Along
+
+- Självständiga övningar
+
+- Reflektion & Q&A
+
+--------------------------------------------------
+--------------------------------------------------
+
+📢 PowerPoint – Talarmanus (Slides 78-79)
+
+--------------------------------------------------
+
+🟨 Slide 78 – Callbacks
+
+🗣️
+“En callback är en funktion som vi skickar som argument till en annan funktion.
+Det betyder att en funktion får ansvaret att köra en annan funktion vid ett senare tillfälle.
+
+Callbacks används ofta för två saker:
+
+Asynkrona operationer – t.ex. vänta på data från en server, vänta på en timer.
+
+Event-hantering – t.ex. klicka på en knapp, skriva i ett fält, eller när en sida laddats klart.
+
+👉 Ett bra sätt att tänka: ‘Gör detta nu, och kör sedan min callback när du är klar’.
+
+Exempel i vardagen:
+
+Du beställer mat på restaurang → köket lagar maten (asynkront).
+
+När maten är klar → servitören kommer ut med den till ditt bord (callback).
+
+Callbacks är alltså ett sätt för oss att kontrollera vad som händer efteråt, utan att behöva veta exakt när.”
+
+
+--------------------------------------------------
+
+🟨 Slide 79 – Callbacks (kodexempel)
+
+🗣️
+“Här ser vi ett konkret exempel:
+
+Vi har en funktion simulateAsyncOperation som tar emot en callback.
+
+Inuti använder vi setTimeout för att simulera en fördröjning på 2 sekunder.
+
+När de 2 sekunderna har gått → anropas callbacken med ett meddelande.
+
+Sedan har vi en enkel callback-funktion logMessage, som loggar ut texten.
+
+När vi kör koden:
+
+Vi anropar simulateAsyncOperation(logMessage).
+
+Direkt efteråt körs console.log("Väntar...").
+
+Efter 2 sekunder dyker Operationen är klar! upp i konsolen.
+
+👉 Viktigt att notera:
+
+Programmet stannar inte och väntar, utan fortsätter direkt.
+
+Det är därför vi ser ‘Väntar…’ innan operationen är klar.
+
+Det här visar tydligt varför callbacks är viktiga i JavaScript – språket är asynkront och eventdrivet, och callbacks gör att vi kan hantera saker när de väl händer, inte innan.”
+
+--------------------------------------------------
+--------------------------------------------------
+
+💻 Code-Along
+
+📂 Mappstruktur:
+
+fridayAgenda/
+  ├── indexCA.html
+  └── scriptCA.js
+
+indexCA.html 
+Genomför den koden
+
+scriptCA.js
+Genomför den koden
+
+--------------------------------------------------
+--------------------------------------------------
+
+🧠 Självständiga övningar
+
+--------------------------------------------------
+--------------------------------------------------
+
+📢 Reflektion & Q&A
+
+--------------------------------------------------
+--------------------------------------------------
